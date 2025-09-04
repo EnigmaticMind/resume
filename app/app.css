@@ -21,3 +21,7 @@ body {
 .resume-headers {
   @apply mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl
 }
+
+.resume-hr {
+  @apply h-px mx-auto my-8 bg-gray-200 border-0 dark:bg-gray-700
+}

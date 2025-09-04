@@ -1,7 +1,10 @@
 import type { Config } from "@react-router/dev/config";
+import packageInfo from './package.json';
+
 
 export default {
-  // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: true,
+  appDirectory: "app",
+  buildDirectory: "build",
+  basename: process.env.NODE_ENV === 'development' ? '/' : `/${packageInfo.name}`,
+  ssr: false,
 } satisfies Config;

@@ -7,7 +7,7 @@ export function Welcome() {
             <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
               Robert Rice
             </h1>
-            <p className="mb-1 text-md font-normal text-gray-600 lg:text-lg">
+            <p className="mb-1 text-md font-normal text-gray-700 lg:text-lg">
               Richmond, Virginia
               <br />
               <a
@@ -29,22 +29,22 @@ export function Welcome() {
           </div>
         </header>
         <div className="w-[700px] max-w-[100vw]">
-          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+          <hr className="resume-hr"></hr>
 
           {/* Prof Summary */}
           <h2 className="resume-headers">Professional Summary</h2>
 
-          <p className="mb-3 text-gray-600 dark:text-gray-400">
+          <p className="mb-3 text-gray-700 ">
             Full Stack Engineer with 15+ years of experience creating scalable,
             secure, and high-performance applications.
           </p>
 
-          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+          <hr className="resume-hr"></hr>
 
           {/* Core Comp */}
           <h2 className="resume-headers">Core Competencies</h2>
 
-          <div className="mb-3 text-gray-600 dark:text-gray-400">
+          <div className="mb-3 text-gray-700 ">
             <ul className="pl-2 space-y-2 text-gray-500 list-none list-inside">
               <li>
                 <span className="text-gray-700 font-bold">Languages:</span>{" "}
@@ -92,12 +92,12 @@ export function Welcome() {
             </ul>
           </div>
 
-          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+          <hr className="resume-hr"></hr>
 
           {/* Prof Exp */}
           <h2 className="resume-headers">Professional Experience</h2>
 
-          <div className="mb-3 space-y-4 text-gray-600">
+          <div className="mb-3 space-y-4 text-gray-700">
             <div>
               <div>
                 <span className="font-bold">ConnectRN</span> — Lead Principal
@@ -228,23 +228,23 @@ export function Welcome() {
             </div>
           </div>
 
-          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+          <hr className="resume-hr"></hr>
 
           {/* Certifications */}
           <h2 className="resume-headers">Certifications</h2>
 
-          <p className="mb-3 text-gray-600 dark:text-gray-400">
+          <p className="mb-3 text-gray-700 ">
             AWS Certified Developer
             <br />
             AWS Certified Solutions Architect
           </p>
 
-          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+          <hr className="resume-hr"></hr>
 
           {/* Education */}
           <h2 className="resume-headers">Education</h2>
 
-          <p className="mb-3 text-gray-600 dark:text-gray-400">
+          <p className="mb-3 text-gray-700 ">
             <span className="font-bold">ITT Technical Institute</span>
             <br />
             Richmond, VA | 2006 – 2009
