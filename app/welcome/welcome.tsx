@@ -1,45 +1,254 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
-
 export function Welcome() {
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
-      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
+      <div className="flex-1 flex flex-col items-center gap-2 min-h-0">
         <header className="flex flex-col items-center gap-9">
-          <div className="w-[500px] max-w-[100vw] p-4">
-            <img
-              src={logoLight}
-              alt="React Router"
-              className="block w-full dark:hidden"
-            />
-            <img
-              src={logoDark}
-              alt="React Router"
-              className="hidden w-full dark:block"
-            />
+          <div className="w-[700px] max-w-[100vw]">
+            <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+              Robert Rice
+            </h1>
+            <p className="mb-1 text-md font-normal text-gray-600 lg:text-lg">
+              Richmond, Virginia
+              <br />
+              <a
+                href="mailto:rrice.jbs@gmail.com"
+                className="text-blue-600"
+                target="_blank"
+              >
+                rrice.jbs@gmail.com
+              </a>
+              <br />
+              <a
+                href="https://www.linkedin.com/in/robert-rice-807837174/"
+                className="text-blue-600"
+                target="_blank"
+              >
+                https://www.linkedin.com/in/robert-rice-807837174/
+              </a>
+            </p>
           </div>
         </header>
-        <div className="max-w-[300px] w-full space-y-6 px-4">
-          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
-            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-              What&apos;s next?
-            </p>
-            <ul>
-              {resources.map(({ href, text, icon }) => (
-                <li key={href}>
-                  <a
-                    className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {icon}
-                    {text}
-                  </a>
-                </li>
-              ))}
+        <div className="w-[700px] max-w-[100vw]">
+          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+
+          {/* Prof Summary */}
+          <h2 className="resume-headers">Professional Summary</h2>
+
+          <p className="mb-3 text-gray-600 dark:text-gray-400">
+            Full Stack Engineer with 15+ years of experience creating scalable,
+            secure, and high-performance applications.
+          </p>
+
+          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+
+          {/* Core Comp */}
+          <h2 className="resume-headers">Core Competencies</h2>
+
+          <div className="mb-3 text-gray-600 dark:text-gray-400">
+            <ul className="pl-2 space-y-2 text-gray-500 list-none list-inside">
+              <li>
+                <span className="text-gray-700 font-bold">Languages:</span>{" "}
+                JavaScript, TypeScript, Go, Java, Python
+              </li>
+
+              <li>
+                <span className="text-gray-700 font-bold">Frameworks:</span>{" "}
+                React, React Native, Vue.js, Angular, Redux, Spring, Node
+              </li>
+
+              <li>
+                <span className="text-gray-700 font-bold">DevOps & Cloud:</span>{" "}
+                AWS, Docker, Jenkins, Terraform, GitHub Actions
+              </li>
+
+              <li>
+                <span className="text-gray-700 font-bold">
+                  AI & Data Science:
+                </span>{" "}
+                Neural Networks, Large Language Models (LLMs), Github Copilot
+              </li>
+
+              <li>
+                <span className="text-gray-700 font-bold">Gen AI:</span> Stable
+                Diffusion, Hugging Face
+              </li>
+
+              <li>
+                <span className="text-gray-700 font-bold">Databases:</span>{" "}
+                MySQL, PostgreSQL, MongoDB
+              </li>
+
+              <li>
+                <span className="text-gray-700 font-bold">Testing:</span>{" "}
+                Jasmine, Karma, Cypress, Protractor
+              </li>
+
+              <li>
+                <span className="text-gray-700 font-bold">
+                  Tools & Workflow:
+                </span>{" "}
+                Git, GitKraken, Jira, Confluence, Webpack, WebAssembly, Vite
+              </li>
             </ul>
-          </nav>
+          </div>
+
+          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+
+          {/* Prof Exp */}
+          <h2 className="resume-headers">Professional Experience</h2>
+
+          <div className="mb-3 space-y-4 text-gray-600">
+            <div>
+              <div>
+                <span className="font-bold">ConnectRN</span> — Lead Principal
+                Software Engineer
+                <br />
+                Boston, MA | 2022 – Present
+              </div>
+              <ul className="pt-4 pl-4 space-y-4 list-disc list-inside">
+                <li>
+                  Created the payroll management software in Go & React which
+                  supports over 100,000 nursing professionals and the billing
+                  for nursing facilities they work at.
+                </li>
+                <li>
+                  Worked on the React and React mobile user interfaces for
+                  connecting nurses with positions at facilities.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div>
+                <span className="font-bold">Capital One</span> — Lead Principal
+                Software Engineer <br />
+                Richmond, VA | 2019 – 2022
+              </div>
+              <ul className="pt-4 pl-4 space-y-4 list-disc list-inside">
+                <li>
+                  Built the Vue.js & Java app which created the over 100 million
+                  monthly credit card statements, specifically the logic around
+                  when to show what advertising partners adverts.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div>
+                <span className="font-bold">Advance Auto Parts</span> —
+                Principal Software Engineer <br />
+                Richmond, VA | 2018 – 2019
+              </div>
+              <ul className="pt-4 pl-4 space-y-4 list-disc list-inside">
+                <li>
+                  Reduced initial application load times from about 11 seconds
+                  to ms in scale, along with other optimization improvements.
+                  This was done by reducing our build size in Webpack through
+                  methods like tree shaking. I also introduced Redux patterns
+                  (through NgRx) into our application which eliminated
+                  unnecessary requests.
+                </li>
+                <li>
+                  Led version upgrades from AngularJS to Angular 8 along with
+                  migrating SVN ➔ Git on an application actively supporting over
+                  4,000 retail locations and billions in revenue.
+                </li>
+                <li>Taught Redux methodologies to 30+ front end developers.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div>
+                <span className="font-bold">Capital One</span> — Principal
+                Software Engineer <br />
+                Richmond, VA | 2016 – 2019
+              </div>
+              <ul className="pt-4 pl-4 space-y-4 list-disc list-inside">
+                <li>
+                  Wrote Go APIs which managed commercial banking products with a
+                  median transaction dollar amount in the low $10 million.
+                </li>
+                <li>
+                  Introduced our department of 40+ people to end to end and unit
+                  testing. Reducing error rates which was critical given our
+                  high profile, high income business clients.
+                </li>
+                <li>
+                  Presented to groups of 60+ engineers about up and coming
+                  technologies like Go, Webpack, and React/Angular.
+                </li>
+                <li>
+                  Cut AWS expenses by 1/10th original cost switching to Go over
+                  Java.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div>
+                <span className="font-bold">Advance Auto Parts</span> — Front
+                End Engineer (Contract) <br />
+                Richmond, VA | 2015 – 2016
+              </div>
+              <ul className="pt-4 pl-4 space-y-1 list-disc list-inside">
+                <li>
+                  Modernized the company's point of sale COBOL application to a
+                  web based Javascript application. This enabled push button
+                  deployments to over 4,000 retail stores across the country,
+                  supporting billions in revenue for the company.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div>
+                <span className="font-bold">SANS Institute</span> — Lead
+                Software Engineer <br />
+                Fredericksburg, VA | 2011 – 2015
+              </div>
+              <ul className="pt-4 pl-4 space-y-1 list-disc list-inside">
+                <li>
+                  Lead development for the company's sole payment processing and
+                  accounting platform. We supported multiple currencies across
+                  the globe in NA, EMEA, and APAC.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold">R&R Office Supplies</span> — Software
+              Engineer <br />
+              Richmond, VA | 2010 – 2011
+            </div>
+
+            <div>
+              <span className="font-bold">Netsearch Direct</span> — Web
+              Developer <br />
+              Richmond, VA | 2009 – 2010
+            </div>
+          </div>
+
+          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+
+          {/* Certifications */}
+          <h2 className="resume-headers">Certifications</h2>
+
+          <p className="mb-3 text-gray-600 dark:text-gray-400">
+            AWS Certified Developer
+            <br />
+            AWS Certified Solutions Architect
+          </p>
+
+          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+
+          {/* Education */}
+          <h2 className="resume-headers">Education</h2>
+
+          <p className="mb-3 text-gray-600 dark:text-gray-400">
+            <span className="font-bold">ITT Technical Institute</span>
+            <br />
+            Richmond, VA | 2006 – 2009
+          </p>
         </div>
       </div>
     </main>

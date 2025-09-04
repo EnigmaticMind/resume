@@ -13,3 +13,11 @@ body {
     color-scheme: dark;
   }
 }
+
+.primary-p {
+  @apply mb-3 text-gray-500 dark:text-gray-400;
+}
+
+.resume-headers {
+  @apply mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl
+}
