@@ -47,7 +47,7 @@ export function Welcome() {
         <header className="flex flex-col items-center gap-9">
           <div className="w-[700px] max-w-[100vw]">
             <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-              Robert B Rice
+              Robert B. Rice
             </h1>
             <p className="mb-1 text-md font-normal text-gray-700 lg:text-lg">
               Richmond, Virginia
@@ -109,7 +109,7 @@ export function Welcome() {
             <ul className="pl-2 space-y-2 text-gray-500 list-none list-inside">
               <li>
                 <span className="text-gray-700 font-bold">Languages:</span>{" "}
-                JavaScript, TypeScript, Go, Java, Python
+                JavaScript, TypeScript, Go, Java, Python, C#
               </li>
 
               <li>
@@ -136,7 +136,9 @@ export function Welcome() {
                 <span className="text-gray-700 font-bold">
                   Tools & Workflow:
                 </span>{" "}
-                Git, GitKraken, Jira, Confluence, Webpack, WebAssembly, Vite
+                Git, GitKraken, Jira, Confluence, Webpack, WebAssembly, Kafka,
+                Event Bus, gRPC/Protobuf, HTTP/2, Websockets, Unity, Progressive
+                Web Apps, Cursor
               </li>
             </ul>
           </div>
@@ -249,32 +251,6 @@ export function Welcome() {
               </ul>
             </div>
 
-            <div>
-              <div>
-                <span className="font-bold">SANS Institute</span> — Lead
-                Software Engineer <br />
-                Fredericksburg, VA | 2011 – 2015
-              </div>
-              <ul className="pt-4 pl-4 space-y-1 list-disc list-inside">
-                <li>
-                  Lead development for the company's sole payment processing and
-                  accounting platform. We supported multiple currencies across
-                  the globe in NA, EMEA, and APAC.
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <span className="font-bold">R&R Office Supplies</span> — Software
-              Engineer <br />
-              Richmond, VA | 2010 – 2011
-            </div>
-
-            <div>
-              <span className="font-bold">Netsearch Direct</span> — Web
-              Developer <br />
-              Richmond, VA | 2009 – 2010
-            </div>
           </div>
 
           <hr className="resume-hr"></hr>
